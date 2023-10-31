@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: white;
+
+    font-family: 'poppins';
+
+
+}
+
+/*root*/
+
+
+/* Your default styles for .task2 */
+
+@media screen and (max-width: 500px) {
+    .task2 {
+      width: 150px;
+    }
+    .popup{
+        font-size: 18px;
+    }
+}
+
+
+
+
+header{
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    height: max-content;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 40px;
+}
+main{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ nav ul{
+     display: flex;
+     justify-content: center;
+     gap: 19px;
+ }
+
+
+li{
+    list-style: none;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 1000px;*/
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 19px;
+    min-height: 400px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.already-created-list{
+    width: max-content;
+    display: grid;
+    padding: 20px;
+    position: relative;
+
+}
+.create-list{
+    display: flex;
+    margin-bottom: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.switch{
+    scale: 0;
+    transition: 0.4s;
+}
+
+.container-head{
+    font-size: 40px;
+}
+.list-head{
+    font-size: larger;
+}
+
+.btn{
+    /*box-shadow: purple 2px 2px 4px;*/
+    border: 2px solid black;
+    background: #1fb25f;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-width: 100px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    font-size: 25px;
+}
+.label1{
+    text-shadow: #2dd544 2px 2px 19px;
+    font-size: 24px;
+    padding: 10px;
+    background: linear-gradient(to right , #000000, rgba(5, 38, 245, 0.91));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.create{
+
+}
+.create:hover{
+    scale: 1.3;
+    border-color: springgreen;
+}
+.inp{
+    width: 400px;
+    word-break: break-word;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background: black;
+    border: 2px solid palegreen;
+    border-radius: 12px;
+    font-family: 'poppins';
+    font-size: larger;
+
+}
+
+.input-taker{
+    display: none;
+}
+
+.task2{
+    min-width: 200px;
+    margin-bottom: 6px;
+    padding: 12px;
+    max-width: 500px;
+    word-wrap: break-word;
+    border: 2px solid rebeccapurple;
+    border-radius: 7px;
+    border-left-width: 12px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid black;
+    transition: 1s;
+    /*font-size: 23px;*/
+}
+
+::placeholder{
+    font-family: 'poppins';
+    color: #1fb25f;
+}
+
+footer{
+    height: 100px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.copyright{
+    display: flex;justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.list{
+    width: 70%;
+    position: relative;
+}
+
+
+
+.delete-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: url("images/delete.png") center no-repeat; /* Center the background image */
+    background-size: contain;
+    position: absolute;
+    right: -40px;
+    transition: 1s;
+   filter: contrast(112%);
+    bottom: 30%;
+
+}
+.popup{
+    font-size: 27px;
+    z-index: 2;
+    scale: 0;
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background: #000;
+    padding: 20px;
+    border-radius: 12px;
+    color: black;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.1s;
+}
+.yes{
+   scale: 0.8;
+    background: red;
+    border: 1px solid black;
+}
+.yes:hover{
+    color: red;
+    background: black;
+    scale: 1;
+}
+.no{
+    border: 1px solid black;
+    scale: 0.9;
+    background: white;
+}
+.no:hover{
+    scale: 1.1;
+    color: white;
+    background: black;
+}
